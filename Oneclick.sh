@@ -1,5 +1,0 @@
-apt install git
-git clone https://github.com/Jaredy899/DockerPortainer.git
-cd dockerinstall
-chmod +x dockerportainerinstall.sh
-./dockerportainerinstall.sh
