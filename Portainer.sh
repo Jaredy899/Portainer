@@ -5,7 +5,7 @@ set -o nounset
 IFS=$(printf '\n\t')
 
 # Docker
-apt install sudo -y && apt install curl -y
+apt install sudo -y
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 printf '\nDocker installed successfully\n\n'
@@ -30,4 +30,4 @@ docker run -d -p 8000:8000 -p 9000:9000 --name portainer --restart=always -v /va
 apt install nala
 
 #iperf3
-nala install iperf3
+nala install iperf3 -y
