@@ -27,4 +27,4 @@ sleep 5
 docker run -d -p 8000:8000 -p 9000:9000 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
 
 # nala, iperf3, cockpit
-apt install nala && nala install cockpit -y && nala install iperf3 -y -yes
+apt install nala && nala install cockpit -y && nala install iperf3 -y -y
