@@ -26,7 +26,7 @@ sleep 5
 # Portainer
 docker run -d -p 8000:8000 -p 9000:9000 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
 # nala, iperf3, cockpit
-exit && sudo apt install nala -y && sudo nala install cockpit -y && sudo nala install iperf3 -y 
+&& sudo apt install nala -y && sudo nala install cockpit -y && sudo nala install iperf3 -y 
 sleep 5
 #homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
